@@ -28,7 +28,8 @@ const initialState = {
 };
 
 const SEc_PER_QUESTION = 30;
-const BASE_URL = "http://localhost:8000";
+const BASE_URL = "https://quizzeria.onrender.com";
+// const BASE_URL = "http://localhost:8000";
 
 function reducer(state, action) {
   switch (action.type) {
