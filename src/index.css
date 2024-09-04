@@ -301,7 +301,39 @@ progress {
   margin-bottom: 20px;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 370px) {
+  html {
+    font-size: 45%;
+  }
+
+  .app-header {
+    width: 100vw;
+    margin: 4rem 0 8rem;
+  }
+
+  .main {
+    padding: 3.2rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  h3 {
+    text-align: center;
+  }
+
+  .select-subject-container {
+    gap: 4rem;
+  }
+
+  .subject-div img {
+    height: 10rem;
+    width: 10rem;
+  }
+}
+
+@media only screen and (min-width: 371px) and (max-width: 480px) {
   html {
     font-size: 45%;
   }
@@ -321,6 +353,15 @@ progress {
 
   h3 {
     text-align: center;
+  }
+
+  .select-subject-container {
+    gap: 4rem;
+  }
+
+  .subject-div img {
+    height: 10rem;
+    width: 10rem;
   }
 }
 

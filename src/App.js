@@ -16,7 +16,7 @@ import SelectSubject from "./Components/SelectSubject";
 
 const initialState = {
   questions: [],
-  answerArray: [1, 3, 2, 0, 1],
+  answerArray: [],
   // loading,error,ready,active,finished
   status: "Start",
   index: 0,
