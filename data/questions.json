@@ -1,0 +1,1068 @@
+{
+  "react": [
+    {
+      "question": "Which is the most popular JavaScript framework?",
+      "options": [
+        "Angular",
+        "React",
+        "Svelte",
+        "Vue"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Which company invented React?",
+      "options": [
+        "Google",
+        "Apple",
+        "Netflix",
+        "Facebook"
+      ],
+      "correctOption": 3,
+      "points": 10
+    },
+    {
+      "question": "What's the fundamental building block of React apps?",
+      "options": [
+        "Components",
+        "Blocks",
+        "Elements",
+        "Effects"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What's the name of the syntax we use to describe the UI in React components?",
+      "options": [
+        "FBJ",
+        "Babel",
+        "JSX",
+        "ES2015"
+      ],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "How does data flow naturally in React apps?",
+      "options": [
+        "From parents to children",
+        "From children to parents",
+        "Both ways",
+        "The developers decides"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "How to pass data into a child component?",
+      "options": [
+        "State",
+        "Props",
+        "PropTypes",
+        "Parameters"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "When to use derived state?",
+      "options": [
+        "Whenever the state should not trigger a re-render",
+        "Whenever the state can be synchronized with an effect",
+        "Whenever the state should be accessible to all components",
+        "Whenever the state can be computed from another state variable"
+      ],
+      "correctOption": 3,
+      "points": 30
+    },
+    {
+      "question": "What triggers a UI re-render in React?",
+      "options": [
+        "Running an effect",
+        "Passing props",
+        "Updating state",
+        "Adding event listeners to DOM elements"
+      ],
+      "correctOption": 2,
+      "points": 20
+    },
+    {
+      "question": "When do we directly \"touch\" the DOM in React?",
+      "options": [
+        "When we need to listen to an event",
+        "When we need to change the UI",
+        "When we need to add styles",
+        "Almost never"
+      ],
+      "correctOption": 3,
+      "points": 20
+    },
+    {
+      "question": "In what situation do we use a callback to update state?",
+      "options": [
+        "When updating the state will be slow",
+        "When the updated state is very data-intensive",
+        "When the state update should happen faster",
+        "When the new state depends on the previous state"
+      ],
+      "correctOption": 3,
+      "points": 30
+    },
+    {
+      "question": "If we pass a function to useState, when will that function be called?",
+      "options": [
+        "On each re-render",
+        "Each time we update the state",
+        "Only on the initial render",
+        "The first time we update the state"
+      ],
+      "correctOption": 2,
+      "points": 30
+    },
+    {
+      "question": "Which hook to use for an API request on the component's initial render?",
+      "options": [
+        "useState",
+        "useEffect",
+        "useRef",
+        "useReducer"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Which variables should go into the useEffect dependency array?",
+      "options": [
+        "Usually none",
+        "All our state variables",
+        "All state and props referenced in the effect",
+        "All variables needed for clean up"
+      ],
+      "correctOption": 2,
+      "points": 30
+    },
+    {
+      "question": "An effect will always run on the initial render.",
+      "options": [
+        "True",
+        "It depends on the dependency array",
+        "False",
+        "In depends on the code in the effect"
+      ],
+      "correctOption": 0,
+      "points": 30
+    },
+    {
+      "question": "When will an effect run if it doesn't have a dependency array?",
+      "options": [
+        "Only when the component mounts",
+        "Only when the component unmounts",
+        "The first time the component re-renders",
+        "Each time the component is re-rendered"
+      ],
+      "correctOption": 3,
+      "points": 20
+    }
+  ],
+  "javaScript": [
+    {
+      "question": "Which keyword is used to declare a variable in JavaScript?",
+      "options": [
+        "var",
+        "let",
+        "const",
+        "All of the above"
+      ],
+      "correctOption": 3,
+      "points": 10
+    },
+    {
+      "question": "Which of the following is a primitive data type in JavaScript?",
+      "options": [
+        "String",
+        "Object",
+        "Function",
+        "Array"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "How do you create a function in JavaScript?",
+      "options": [
+        "function:myFunction()",
+        "function = myFunction()",
+        "function myFunction()",
+        "create myFunction()"
+      ],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What will `typeof null` return in JavaScript?",
+      "options": [
+        "null",
+        "object",
+        "undefined",
+        "number"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Which array method is used to remove the last element from an array?",
+      "options": [
+        "shift()",
+        "pop()",
+        "splice()",
+        "slice()"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What does the `===` operator compare?",
+      "options": [
+        "Value only",
+        "Type only",
+        "Value and type",
+        "None of the above"
+      ],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "Which of the following is not a looping structure in JavaScript?",
+      "options": [
+        "for",
+        "while",
+        "foreach",
+        "loop"
+      ],
+      "correctOption": 3,
+      "points": 10
+    },
+    {
+      "question": "How do you write an IF statement in JavaScript?",
+      "options": [
+        "if i = 5 then",
+        "if i == 5 then",
+        "if (i == 5)",
+        "if i = 5"
+      ],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "Which built-in method sorts the elements of an array?",
+      "options": [
+        "order()",
+        "sort()",
+        "arrange()",
+        "orderBy()"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Which of the following is not a valid JavaScript variable name?",
+      "options": [
+        "_abc",
+        "123abc",
+        "$abc",
+        "abc123"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Which method is used to parse a string to an integer in JavaScript?",
+      "options": [
+        "parseInt()",
+        "parseFloat()",
+        "Number()",
+        "toString()"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What will `console.log(typeof [])` output?",
+      "options": [
+        "array",
+        "object",
+        "undefined",
+        "string"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Which of the following is used to add an element at the beginning of an array?",
+      "options": [
+        "push()",
+        "unshift()",
+        "pop()",
+        "shift()"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Which keyword is used to define a constant in JavaScript?",
+      "options": [
+        "var",
+        "let",
+        "constant",
+        "const"
+      ],
+      "correctOption": 3,
+      "points": 10
+    },
+    {
+      "question": "What will be the output of `2 + '2'` in JavaScript?",
+      "options": [
+        "4",
+        "22",
+        "NaN",
+        "undefined"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Which method can be used to convert an object to a JSON string?",
+      "options": [
+        "JSON.parse()",
+        "JSON.stringify()",
+        "JSON.toString()",
+        "Object.toJSON()"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Which of the following is a way to define an arrow function in JavaScript?",
+      "options": [
+        "let func = () => {}",
+        "let func = function() => {}",
+        "let func = => {}",
+        "let func = -> {}"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "How do you check if a variable `a` is not equal to `b` in JavaScript?",
+      "options": [
+        "a <> b",
+        "a !== b",
+        "a =! b",
+        "a != b"
+      ],
+      "correctOption": 3,
+      "points": 10
+    },
+    {
+      "question": "What is the result of `true && false`?",
+      "options": [
+        "true",
+        "false",
+        "undefined",
+        "null"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Which of the following is not a JavaScript framework?",
+      "options": [
+        "React",
+        "Vue",
+        "Angular",
+        "Laravel"
+      ],
+      "correctOption": 3,
+      "points": 10
+    }
+  ],
+  "python": [
+    {
+      "question": "Which keyword is used to create a function in Python?",
+      "options": [
+        "function",
+        "def",
+        "func",
+        "define"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "How do you start a comment in Python?",
+      "options": [
+        "//",
+        "#",
+        "/*",
+        "<!--"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Which of the following is a mutable data type in Python?",
+      "options": [
+        "tuple",
+        "list",
+        "string",
+        "int"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "How do you create a dictionary in Python?",
+      "options": [
+        "dict = {}",
+        "dict = []",
+        "dict = ()",
+        "dict = <>"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which method is used to remove an item from a list in Python?",
+      "options": [
+        "delete()",
+        "remove()",
+        "discard()",
+        "pop()"
+      ],
+      "correctOption": 3,
+      "points": 10
+    },
+    {
+      "question": "What will `len([1, 2, 3])` return?",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "1"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Which of the following is not a keyword in Python?",
+      "options": [
+        "try",
+        "except",
+        "finally",
+        "throw"
+      ],
+      "correctOption": 3,
+      "points": 10
+    },
+    {
+      "question": "How do you check if a value is not equal to another value in Python?",
+      "options": [
+        "!=",
+        "<>",
+        "==!",
+        "!=="
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which function is used to read input from the user in Python?",
+      "options": [
+        "read()",
+        "input()",
+        "scan()",
+        "get()"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What will be the output of `2 + 2` in Python?",
+      "options": [
+        "22",
+        "4",
+        "NaN",
+        "Error"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Which operator is used for exponentiation in Python?",
+      "options": [
+        "^",
+        "**",
+        "^^",
+        "//"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Which method is used to add an element at the end of a list in Python?",
+      "options": [
+        "append()",
+        "insert()",
+        "add()",
+        "extend()"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which of the following is used to create an empty set in Python?",
+      "options": [
+        "set = {}",
+        "set = []",
+        "set = set()",
+        "set = ()"
+      ],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "Which of the following is a valid way to create a tuple in Python?",
+      "options": [
+        "tuple = []",
+        "tuple = {}",
+        "tuple = ()",
+        "tuple = (1, 2, 3)"
+      ],
+      "correctOption": 3,
+      "points": 10
+    },
+    {
+      "question": "How do you check the data type of a variable in Python?",
+      "options": [
+        "typeof",
+        "type()",
+        "isinstance()",
+        "data()"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Which of the following will correctly create a generator in Python?",
+      "options": [
+        "[x for x in range(5)]",
+        "{x for x in range(5)}",
+        "(x for x in range(5))",
+        "<x for x in range(5)>"
+      ],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "Which of the following is used to handle exceptions in Python?",
+      "options": [
+        "try-except",
+        "try-catch",
+        "try-then",
+        "catch-finally"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which function is used to return the absolute value of a number in Python?",
+      "options": [
+        "abs()",
+        "absolute()",
+        "fabs()",
+        "math.abs()"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What does the `len()` function do in Python?",
+      "options": [
+        "Counts the number of elements",
+        "Returns the length of the string",
+        "Returns the number of items in an object",
+        "All of the above"
+      ],
+      "correctOption": 3,
+      "points": 10
+    },
+    {
+      "question": "Which of the following is a Python built-in function?",
+      "options": [
+        "map()",
+        "reduce()",
+        "filter()",
+        "All of the above"
+      ],
+      "correctOption": 3,
+      "points": 10
+    }
+  ],
+  "c++": [
+    {
+      "question": "Which of the following is used to define a constant in C++?",
+      "options": [
+        "const",
+        "constant",
+        "#define",
+        "Both const and #define"
+      ],
+      "correctOption": 3,
+      "points": 10
+    },
+    {
+      "question": "Which operator is used to access the address of a variable in C++?",
+      "options": [
+        "*",
+        "&",
+        "@",
+        "%"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is the output of the following code?\n```cpp\nint a = 5;\nint b = ++a;\ncout << b;\n```",
+      "options": [
+        "4",
+        "5",
+        "6",
+        "Error"
+      ],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "Which of the following is not a basic data type in C++?",
+      "options": [
+        "int",
+        "float",
+        "boolean",
+        "double"
+      ],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "Which of the following is used to declare a class in C++?",
+      "options": [
+        "object",
+        "struct",
+        "class",
+        "module"
+      ],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "Which keyword is used to prevent a function from modifying an object in C++?",
+      "options": [
+        "final",
+        "static",
+        "mutable",
+        "const"
+      ],
+      "correctOption": 3,
+      "points": 10
+    },
+    {
+      "question": "Which operator is used to dereference a pointer in C++?",
+      "options": [
+        "&",
+        "*",
+        "%",
+        "->"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What will be the output of the following code?\n```cpp\nint a = 10;\ncout << a / 3;\n```",
+      "options": [
+        "3.333",
+        "3",
+        "3.33",
+        "Error"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Which of the following is used to define a function outside a class in C++?",
+      "options": [
+        "::",
+        "->",
+        "function",
+        "~"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which of the following is not a valid access specifier in C++?",
+      "options": [
+        "private",
+        "protected",
+        "public",
+        "internal"
+      ],
+      "correctOption": 3,
+      "points": 10
+    },
+    {
+      "question": "Which of the following is the correct syntax to declare a pointer to an integer?",
+      "options": [
+        "int *p;",
+        "int p*;",
+        "int &p;",
+        "int^ p;"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What does the `new` keyword do in C++?",
+      "options": [
+        "Deletes an object",
+        "Creates a new variable",
+        "Allocates memory dynamically",
+        "None of the above"
+      ],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What will be the result of the following code?\n```cpp\nint a = 10, b = 20;\nswap(a, b);\ncout << a;\n```",
+      "options": [
+        "10",
+        "20",
+        "Error",
+        "Undefined"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Which of the following is true about destructors in C++?",
+      "options": [
+        "They are called automatically when an object is destroyed",
+        "They have the same name as the class but preceded by a tilde (~)",
+        "They do not take arguments",
+        "All of the above"
+      ],
+      "correctOption": 3,
+      "points": 10
+    },
+    {
+      "question": "Which of the following is a correct syntax to include a header file in C++?",
+      "options": [
+        "#include <filename>",
+        "#include 'filename'",
+        "#include \"filename\"",
+        "All of the above"
+      ],
+      "correctOption": 3,
+      "points": 10
+    },
+    {
+      "question": "Which of the following is used to handle exceptions in C++?",
+      "options": [
+        "try-catch",
+        "try-except",
+        "try-finally",
+        "try-error"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What will be the output of the following code?\n```cpp\nfor (int i = 0; i < 5; i++) {\n    cout << i;\n}\n```",
+      "options": [
+        "12345",
+        "01234",
+        "1234",
+        "012345"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Which of the following is not a feature of object-oriented programming in C++?",
+      "options": [
+        "Encapsulation",
+        "Inheritance",
+        "Polymorphism",
+        "Compilation"
+      ],
+      "correctOption": 3,
+      "points": 10
+    },
+    {
+      "question": "Which of the following is the correct way to define a constructor in C++?",
+      "options": [
+        "class_name()",
+        "~class_name()",
+        "void class_name()",
+        "class class_name()"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is the use of the `this` pointer in C++?",
+      "options": [
+        "To refer to the current object",
+        "To create a new object",
+        "To refer to the base class",
+        "To access static members"
+      ],
+      "correctOption": 0,
+      "points": 10
+    }
+  ],
+  "java": [
+    {
+      "question": "Which keyword is used to define a class in Java?",
+      "options": [
+        "class",
+        "struct",
+        "object",
+        "module"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is the size of an `int` data type in Java?",
+      "options": [
+        "8 bits",
+        "16 bits",
+        "32 bits",
+        "64 bits"
+      ],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "Which of the following is not a primitive data type in Java?",
+      "options": [
+        "int",
+        "float",
+        "string",
+        "char"
+      ],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What is the default value of a boolean variable in Java?",
+      "options": [
+        "true",
+        "false",
+        "0",
+        "undefined"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Which of the following is the correct way to declare a variable in Java?",
+      "options": [
+        "int 1x = 10;",
+        "int x = 10;",
+        "float x = 10.0;",
+        "Both int x = 10; and float x = 10.0;"
+      ],
+      "correctOption": 3,
+      "points": 10
+    },
+    {
+      "question": "Which of the following is used to handle exceptions in Java?",
+      "options": [
+        "try-catch",
+        "try-except",
+        "try-finally",
+        "try-then"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which method is called when an object is created in Java?",
+      "options": [
+        "finalize()",
+        "start()",
+        "init()",
+        "constructor"
+      ],
+      "correctOption": 3,
+      "points": 10
+    },
+    {
+      "question": "Which keyword is used to inherit a class in Java?",
+      "options": [
+        "implement",
+        "extend",
+        "inherits",
+        "extends"
+      ],
+      "correctOption": 3,
+      "points": 10
+    },
+    {
+      "question": "Which of the following is not a valid access modifier in Java?",
+      "options": [
+        "private",
+        "public",
+        "protected",
+        "internal"
+      ],
+      "correctOption": 3,
+      "points": 10
+    },
+    {
+      "question": "Which of the following is used to print text to the console in Java?",
+      "options": [
+        "print()",
+        "System.out.println()",
+        "console.log()",
+        "echo()"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is the entry point of a Java program?",
+      "options": [
+        "public static void main(String[] args)",
+        "public static void start(String[] args)",
+        "public void main(String[] args)",
+        "main(String[] args)"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which keyword is used to define an interface in Java?",
+      "options": [
+        "interface",
+        "class",
+        "implements",
+        "extends"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which of the following is a valid way to create an object in Java?",
+      "options": [
+        "ClassName obj = new ClassName();",
+        "ClassName obj = ClassName();",
+        "obj = new ClassName();",
+        "new ClassName obj();"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which of the following is not a loop structure in Java?",
+      "options": [
+        "for",
+        "while",
+        "do-while",
+        "repeat-until"
+      ],
+      "correctOption": 3,
+      "points": 10
+    },
+    {
+      "question": "Which method can be used to find the length of a string in Java?",
+      "options": [
+        "length()",
+        "size()",
+        "getLength()",
+        "strlen()"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What does the `this` keyword refer to in Java?",
+      "options": [
+        "The current object",
+        "The parent class",
+        "The class itself",
+        "The method being executed"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which of the following is a correct syntax to create an array in Java?",
+      "options": [
+        "int[] arr = new int[5];",
+        "int arr[5] = new int[];",
+        "int[] arr = new int();",
+        "arr = new int[5];"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which of the following is the correct way to declare a method in Java?",
+      "options": [
+        "void methodName() {}",
+        "methodName() void {}",
+        "void methodName[] {}",
+        "methodName() {}"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which of the following is true about constructors in Java?",
+      "options": [
+        "They have the same name as the class",
+        "They do not have a return type",
+        "They are called when an object is created",
+        "All of the above"
+      ],
+      "correctOption": 3,
+      "points": 10
+    },
+    {
+      "question": "Which of the following is used to compare two strings in Java?",
+      "options": [
+        "==",
+        "equals()",
+        "compareTo()",
+        "Both equals() and compareTo()"
+      ],
+      "correctOption": 3,
+      "points": 10
+    },
+    {
+      "question": "Which of the following is true about the `final` keyword in Java?",
+      "options": [
+        "It can be used to prevent inheritance",
+        "It can be used to declare constants",
+        "It can be used to prevent method overriding",
+        "All of the above"
+      ],
+      "correctOption": 3,
+      "points": 10
+    }
+  ]
+}
