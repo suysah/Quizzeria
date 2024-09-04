@@ -4,7 +4,7 @@ const Button = ({ dispatch, imgURL, payload }) => {
   return (
     <div>
       <button
-        style={{ backgroundColor: "#343a40" }}
+        className="subject-btn"
         onClick={() => dispatch({ type: "subjectSelected", payload })}
       >
         <img src={imgURL} alt={`${imgURL} icon`} />

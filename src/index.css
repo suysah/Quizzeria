@@ -48,8 +48,17 @@ body {
 }
 
 .subject-div p {
-  padding: 0.4rem;
-  font-size: 1.5rem;
+  padding: 0.5rem 0 0;
+  font-size: 2rem;
+}
+
+.subject-btn {
+  background-color: #343a40;
+  -webkit-border-radius: 4rem;
+  -moz-border-radius: 4rem;
+  -ms-border-radius: 4rem;
+  -o-border-radius: 4rem;
+  border-radius: 4rem;
 }
 
 .app {
@@ -237,7 +246,6 @@ progress {
   border-radius: 100px;
 }
 
-/* CREDIT: https://dev.to/afif/i-made-100-css-loaders-for-your-next-project-4eje */
 .loader {
   width: 50px;
   height: 24px;
@@ -331,6 +339,10 @@ progress {
     height: 10rem;
     width: 10rem;
   }
+
+  .subject-div p {
+    font-size: 2.3rem;
+  }
 }
 
 @media only screen and (min-width: 371px) and (max-width: 480px) {
@@ -363,6 +375,10 @@ progress {
     height: 10rem;
     width: 10rem;
   }
+
+  .subject-div p {
+    font-size: 2.4rem;
+  }
 }
 
 @media only screen and (min-width: 481px) and (max-width: 780px) {
@@ -371,6 +387,11 @@ progress {
   }
 
   .app-header {
+    margin: 6rem 0;
     width: 100vw;
+  }
+
+  .subject-div p {
+    font-size: 2.5rem;
   }
 }
