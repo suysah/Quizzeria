@@ -7,12 +7,21 @@ const StartScreen = ({ numQuestions, dispatch, subject }) => {
       <h3>
         {numQuestions} Question to test your {subject} mastery
       </h3>
-      <button
-        className="btn btn-ui"
-        onClick={() => dispatch({ type: "start" })}
-      >
-        Let's Start
-      </button>
+      <div className="start-screen-btn">
+        <button
+          className="btn btn-ui"
+          onClick={() => dispatch({ type: "start" })}
+        >
+          Let's Start
+        </button>
+
+        <button
+          className="btn btn-ui"
+          onClick={() => dispatch({ type: "Restart" })}
+        >
+          Back
+        </button>
+      </div>
     </div>
   );
 };

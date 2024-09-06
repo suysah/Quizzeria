@@ -1,4 +1,4 @@
-:root {
+.dark {
   --color-darkest: #343a40;
   --color-dark: #495057;
   --color-medium: #ced4da;
@@ -6,11 +6,19 @@
 
   --color-theme: #1098ad;
   --color-accent: #ffa94d;
-  /* --color-theme: #04ed69;
-  --color-accent: #fd2525dc; */
+  --color-ans-res: var(--color-light);
 }
 
-/* @import url("https://fonts.googleapis.com/css2?family=Codystar&display=swap"); */
+.light {
+  --color-darkest: #f1f3f5;
+  --color-dark: #ced4da;
+  --color-medium: #495057;
+  --color-light: #343a40;
+
+  --color-theme: #08a4f8;
+  --color-accent: #4d4a4a;
+  --color-ans-res: #fff;
+}
 
 * {
   margin: 0;
@@ -61,6 +69,18 @@ body {
   border-radius: 4rem;
 }
 
+.dark-light-toggle-btn {
+  display: flex;
+  align-items: center;
+  font-size: 2.5rem;
+  height: 4rem;
+  width: 4rem;
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 50%;
+  justify-content: center;
+}
+
 .app {
   display: flex;
   flex-direction: column;
@@ -76,6 +96,7 @@ body {
   width: 66rem;
   margin-bottom: 2rem;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -86,6 +107,7 @@ body {
   font-weight: 500;
   padding: 2rem;
   background-color: #495057;
+  color: white;
   border-radius: 100px;
 }
 
@@ -120,6 +142,12 @@ h4 {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.start-screen-btn {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .progress {
@@ -185,6 +213,8 @@ progress {
 }
 
 .btn-option {
+  padding: 0.8rem 2rem;
+  height: max-content;
   width: 100%;
   text-align: left;
 }
@@ -192,7 +222,7 @@ progress {
 .btn-option.correct {
   background-color: var(--color-theme);
   border: 2px solid var(--color-theme);
-  color: var(--color-light);
+  color: var(--color-ans-res);
 }
 .btn-option.wrong {
   background-color: var(--color-accent);
@@ -206,7 +236,7 @@ progress {
 
 .result {
   background-color: var(--color-theme);
-  color: var(--color-light);
+  color: var(--color-ans-res);
   border-radius: 100px;
   text-align: center;
   padding: 2rem 0;
@@ -387,7 +417,7 @@ progress {
   }
 
   .app-header {
-    margin: 6rem 0;
+    /* margin: 6rem 0; */
     width: 100vw;
   }
 

@@ -13,6 +13,7 @@ import NextButton from "./Components/NextButton";
 import Timer from "./Components/Timer";
 import ViewSubmissions from "./Components/ViewSubmissions";
 import SelectSubject from "./Components/SelectSubject";
+import { FaSun, FaMoon } from "react-icons/fa";
 
 const initialState = {
   questions: [],
@@ -25,6 +26,7 @@ const initialState = {
   highScore: 0,
   timeRemaining: null,
   subject: null,
+  themeDark: true,
 };
 
 const SEc_PER_QUESTION = 30;
@@ -47,6 +49,8 @@ function reducer(state, action) {
         status: "Active",
         timeRemaining: state.questions.length * SEc_PER_QUESTION,
       };
+    case "colorTheme":
+      return { ...state, themeDark: !state.themeDark };
     case "newAnswer":
       const question = state.questions.at(state.index);
 
@@ -105,6 +109,7 @@ const App = () => {
       highScore,
       timeRemaining,
       subject,
+      themeDark,
     },
     dispatch,
   ] = useReducer(reducer, initialState);
@@ -139,9 +144,24 @@ const App = () => {
     [subject]
   );
 
+  useEffect(
+    function () {
+      document.body.className = themeDark ? "dark" : "light";
+    },
+    [themeDark]
+  );
+
   return (
-    <div className="app">
-      <Header />
+    <div className="app ">
+      <Header>
+        <button
+          className="dark-light-toggle-btn"
+          onClick={() => dispatch({ type: "colorTheme" })}
+        >
+          {themeDark ? <FaSun color="yellow" /> : <FaMoon />}
+        </button>
+      </Header>
+
       {status === "Start" && <SelectSubject dispatch={dispatch} />}
       <Main>
         {status === "Loading" && <Loader />}
