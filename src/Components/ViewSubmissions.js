@@ -29,8 +29,8 @@ const ViewSubmissions = () => {
   return (
     <div>
       <div className="prev-next-btn">
-        <button className="btn bbtn-ui back-btn" onClick={handleBack}>
-          &larr;
+        <button className="btn btn-ui back-btn" onClick={handleBack}>
+          Back
         </button>
         <p>
           Questions: <strong>{queIndex + 1}</strong>/{numQuestions}{" "}
