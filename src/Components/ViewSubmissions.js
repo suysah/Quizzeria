@@ -1,12 +1,9 @@
 import React, { useState } from "react";
+import { useQuizContext } from "../context/QuizContext";
 
-const ViewSubmissions = ({
-  answer,
-  question,
-  answerArray,
-  numQuestions,
-  dispatch,
-}) => {
+const ViewSubmissions = () => {
+  const { questions, answerArray, numQuestions, dispatch } = useQuizContext();
+
   const [queIndex, setQuestionIndex] = useState(0);
   console.log(queIndex);
 
@@ -26,7 +23,7 @@ const ViewSubmissions = ({
   // ${index === answerArray[queIndex] ? "correct" : ""}
 
   let choosen = answerArray[queIndex];
-  const correct = question[queIndex].correctOption;
+  const correct = questions[queIndex].correctOption;
   if (choosen === correct) choosen = null;
 
   return (
@@ -39,9 +36,9 @@ const ViewSubmissions = ({
           Questions: <strong>{queIndex + 1}</strong>/{numQuestions}{" "}
         </p>
       </div>
-      <h4> {question[queIndex].question} </h4>
+      <h4> {questions[queIndex].question} </h4>
       <div className="options">
-        {question[queIndex].options.map((op, index) => (
+        {questions[queIndex].options.map((op, index) => (
           <button
             className={`btn btn-option 
               

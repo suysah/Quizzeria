@@ -49,6 +49,11 @@ body {
   align-items: center;
 }
 
+.subject-div img {
+  height: 12rem;
+  width: 12rem;
+}
+
 .subject-div {
   display: flex;
   flex-direction: column;
@@ -346,7 +351,7 @@ progress {
 
   .app-header {
     width: 100vw;
-    margin: 4rem 0 8rem;
+    margin: 4rem 0 6rem;
   }
 
   .main {
@@ -373,6 +378,12 @@ progress {
   .subject-div p {
     font-size: 2.3rem;
   }
+
+  .dark-light-toggle-btn {
+    font-size: 3rem;
+    height: 6rem;
+    width: 6rem;
+  }
 }
 
 @media only screen and (min-width: 371px) and (max-width: 480px) {
@@ -381,7 +392,7 @@ progress {
   }
 
   .app-header {
-    margin: 6rem 0;
+    margin: 6rem 0 4rem;
     width: 100vw;
   }
 
@@ -409,19 +420,35 @@ progress {
   .subject-div p {
     font-size: 2.4rem;
   }
+
+  .dark-light-toggle-btn {
+    font-size: 3rem;
+    height: 6rem;
+    width: 6rem;
+  }
 }
 
-@media only screen and (min-width: 481px) and (max-width: 780px) {
+@media only screen and (min-width: 481px) and (max-width: 880px) {
   html {
     font-size: 60%;
   }
 
   .app-header {
-    /* margin: 6rem 0; */
     width: 100vw;
   }
 
   .subject-div p {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
+  }
+
+  .dark-light-toggle-btn {
+    font-size: 3rem;
+    height: 5.5rem;
+    width: 5.5rem;
+  }
+
+  .subject-div img {
+    height: 10rem;
+    width: 10rem;
   }
 }

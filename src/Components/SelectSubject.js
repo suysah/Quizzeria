@@ -1,7 +1,10 @@
 import React from "react";
 import Button from "./Button";
+import { useQuizContext } from "../context/QuizContext";
 
-const SelectSubject = ({ dispatch }) => {
+const SelectSubject = () => {
+  const { dispatch } = useQuizContext();
+
   return (
     <div className="select-subject-container">
       <div className="subject-div">
