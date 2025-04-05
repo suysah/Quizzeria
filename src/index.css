@@ -344,6 +344,14 @@ progress {
   margin-bottom: 20px;
 }
 
+.Note {
+  margin: 5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70vw;
+}
+
 @media only screen and (max-width: 370px) {
   html {
     font-size: 45%;
@@ -383,6 +391,10 @@ progress {
     font-size: 3rem;
     height: 6rem;
     width: 6rem;
+  }
+
+  .noteDiv {
+    height: 25rem;
   }
 }
 
@@ -426,6 +438,10 @@ progress {
     height: 6rem;
     width: 6rem;
   }
+
+  .noteDiv {
+    height: 25rem;
+  }
 }
 
 @media only screen and (min-width: 481px) and (max-width: 880px) {
@@ -450,5 +466,9 @@ progress {
   .subject-div img {
     height: 10rem;
     width: 10rem;
+  }
+
+  .noteDiv {
+    height: 30rem;
   }
 }

@@ -15,43 +15,57 @@ import ViewSubmissions from "./Components/ViewSubmissions";
 import SelectSubject from "./Components/SelectSubject";
 import { FaSun, FaMoon } from "react-icons/fa";
 import { useQuizContext } from "./context/QuizContext";
+import Note from "./Components/Note";
 
 const App = () => {
   const { status, themeDark, subject, dispatch } = useQuizContext();
 
   return (
-    <div className="app ">
-      <Header>
-        <button
-          className="dark-light-toggle-btn"
-          onClick={() => dispatch({ type: "colorTheme" })}
-        >
-          {themeDark ? <FaSun color="yellow" /> : <FaMoon />}
-        </button>
-      </Header>
+    <>
+      <div className="app ">
+        <Header>
+          <button
+            className="dark-light-toggle-btn"
+            onClick={() => dispatch({ type: "colorTheme" })}
+          >
+            {themeDark ? <FaSun color="yellow" /> : <FaMoon />}
+          </button>
+        </Header>
 
-      {status === "Start" && <SelectSubject />}
-      <Main>
-        {status === "Loading" && <Loader />}
-        {subject !== null ? status === "Error" && <Error /> : null}
-        {status === "Ready" && <StartScreen />}
-        {status === "Active" && (
-          <>
-            <Progress />
-            <Questions />
+        {status === "Start" && <SelectSubject />}
+        <Main>
+          {status === "Loading" && <Loader />}
+          {subject !== null ? status === "Error" && <Error /> : null}
+          {status === "Ready" && <StartScreen />}
+          {status === "Active" && (
+            <>
+              <Progress />
+              <Questions />
 
-            <Footer>
-              <Timer />
-              <NextButton />
-            </Footer>
-          </>
-        )}
+              <Footer>
+                <Timer />
+                <NextButton />
+              </Footer>
+            </>
+          )}
 
-        {status === "Finished" && <FinishedScreen />}
+          {status === "Finished" && <FinishedScreen />}
 
-        {status === "ViewSubmissions" && <ViewSubmissions />}
-      </Main>
-    </div>
+          {status === "ViewSubmissions" && <ViewSubmissions />}
+        </Main>
+      </div>
+      <div
+        className="noteDiv"
+        style={{
+          width: "100vw",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "flex-end",
+        }}
+      >
+        {status === "Start" || status === "Loading" ? <Note /> : null}
+      </div>
+    </>
   );
 };
 
